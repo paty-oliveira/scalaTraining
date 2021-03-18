@@ -12,4 +12,13 @@ object Lists {
     }
     list.dropRight(1).last
   }
+
+  def kthElement(list: List[Int], element: Int): Int = {
+    if (list.nonEmpty && element <= list.length && element >= 0) {
+      list(element)
+    }
+    else{
+      throw new NoSuchElementException
+    }
+  }
 }
