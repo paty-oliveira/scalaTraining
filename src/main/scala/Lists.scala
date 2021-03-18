@@ -38,4 +38,11 @@ object Lists {
     case nestedList: List[Any] => flatten(nestedList)
     case element => List(element)
   }
+
+  def compress(list: List[Any]): List[Any] = list match {
+    case Nil => Nil
+    case head :: tail => head :: compress(tail.dropWhile(_ == head))
+  }
+
+
 }
