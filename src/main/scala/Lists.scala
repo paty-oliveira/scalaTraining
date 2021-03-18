@@ -33,4 +33,9 @@ object Lists {
   def isPalindrome(list: List[Int]): Boolean = {
     list == reverse(list)
   }
+
+  def flatten(list: List[Any]): List[Any] = list flatMap {
+    case nestedList: List[Any] => flatten(nestedList)
+    case element => List(element)
+  }
 }
