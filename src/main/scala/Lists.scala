@@ -25,4 +25,8 @@ object Lists {
   def length(list: List[Int]): Int = {
     list.length
   }
+
+  def reverse(list: List[Int]): List[Int] = {
+    list.reverse
+  }
 }
