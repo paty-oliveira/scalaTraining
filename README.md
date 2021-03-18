@@ -3,7 +3,7 @@ Repository for [Ninety-Nine Scala Problems](#http://aperiodic.net/phil/scala/s-9
 the **Ninety-Nine Prolog Problems**, written by Werner Hett at the Berne University of Applied Sciences 
 in Berne, Switzerland.
 
-The implementation of the problems follows the approach of **Test-Driven Development** (TDD) based on ScalaTest tool.
+The implementation of the problems follows the methodology of **Test-Driven Development** (TDD) based on ScalaTest tool.
 
 ### Working with lists
 1. [Find the last element of a list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
