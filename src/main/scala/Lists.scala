@@ -29,4 +29,8 @@ object Lists {
   def reverse(list: List[Int]): List[Int] = {
     list.reverse
   }
+
+  def isPalindrome(list: List[Int]): Boolean = {
+    list == reverse(list)
+  }
 }
