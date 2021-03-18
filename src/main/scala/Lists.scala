@@ -21,4 +21,8 @@ object Lists {
       throw new NoSuchElementException
     }
   }
+
+  def length(list: List[Int]): Int = {
+    list.length
+  }
 }
