@@ -9,7 +9,7 @@ class lastListsTest extends AnyFunSuite {
     assert(Lists.last(List(-1, 2, -4, -1)) == -1)
   }
 
-  test("Should throw an exception NoSuchElementException"){
+  test("Should throw an exception NoSuchElementException when list is empty"){
     assertThrows[NoSuchElementException]{
       Lists.last(List())
     }
