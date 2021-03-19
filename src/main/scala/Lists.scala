@@ -44,5 +44,12 @@ object Lists {
     case head :: tail => head :: compress(tail.dropWhile(_ == head))
   }
 
-
+  def pack(list: List[Symbol]): List[List[Symbol]] = {
+    if (list.isEmpty) List(List())
+    else {
+      val (packed, next) = list span { _ == list.head}
+      if (next == Nil) List(packed)
+      else {packed :: pack(next)}
+    }
+  }
 }
