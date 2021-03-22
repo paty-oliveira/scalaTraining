@@ -58,4 +58,11 @@ object Lists {
       (char.length, char.head)
     }
   }
+
+  def encodeModified(list: List[Symbol]): List[Any] = {
+    encode(list) map{ char =>
+      if (char._1 == 1) char._2 else char
+    }
+  }
+
 }
