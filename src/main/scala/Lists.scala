@@ -73,4 +73,13 @@ object Lists {
   def duplicate(list: List[Symbol]): List[Symbol] = {
     encode(list) flatMap(char => List.fill(char._1*2)(char._2))
   }
+
+  def duplicateN(list: List[Symbol], value: Int): List[Symbol] = {
+    if (value > 0){
+      encode(list) flatMap(char => List.fill(char._1 * value)(char._2))
+    }
+    else {
+      throw new ArithmeticException("Value needs to be high than 0")
+    }
+  }
 }
