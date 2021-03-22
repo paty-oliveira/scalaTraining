@@ -52,4 +52,10 @@ object Lists {
       else {packed :: pack(next)}
     }
   }
+
+  def encode(list: List[Symbol]): List[(Int, Symbol)] = {
+    pack(list) map{ char =>
+      (char.length, char.head)
+    }
+  }
 }
