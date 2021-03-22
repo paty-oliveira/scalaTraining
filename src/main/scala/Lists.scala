@@ -65,4 +65,9 @@ object Lists {
     }
   }
 
+  def decode(list: List[(Int, Symbol)]): List[Symbol] = {
+    list flatMap(char => List.fill(char._1)(char._2)
+      )
+  }
+
 }
