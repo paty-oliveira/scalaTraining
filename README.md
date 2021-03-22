@@ -18,3 +18,5 @@ The implementation of the problems follows the methodology of **Test-Driven Deve
 10. [Run-length encoding of a list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
 11. [Modified run-length encoding](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
 12. [Decode a run-length encoded list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
+13. [Duplicate the elements of a list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
+14. [Duplicate the elements of a list a given number of times](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
