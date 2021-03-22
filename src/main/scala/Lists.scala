@@ -70,4 +70,7 @@ object Lists {
       )
   }
 
+  def duplicate(list: List[Symbol]): List[Symbol] = {
+    encode(list) flatMap(char => List.fill(char._1*2)(char._2))
+  }
 }
