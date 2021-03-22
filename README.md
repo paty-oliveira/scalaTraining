@@ -15,4 +15,6 @@ The implementation of the problems follows the methodology of **Test-Driven Deve
 7. [Flatten a nested list structure](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
 8. [Eliminate consecutive duplicates of list elements](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
 9. [Pack consecutive duplicates of list elements into sublists](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
-
+10. [Run-length encoding of a list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
+11. [Modified run-length encoding](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
+12. [Decode a run-length encoded list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
