@@ -1,15 +1,11 @@
 object Lists {
   def last(list: List[Int]): Int = {
-     if (list.isEmpty){
-       throw new NoSuchElementException
-     }
+    if (list.isEmpty) throw new NoSuchElementException
     list.last
   }
 
   def penultimate(list: List[Int]): Int = {
-    if (list.isEmpty){
-      throw new NoSuchElementException
-    }
+    if (list.isEmpty) throw new NoSuchElementException
     list.dropRight(1).last
   }
 
@@ -17,9 +13,7 @@ object Lists {
     if (list.nonEmpty && element <= list.length && element >= 0) {
       list(element)
     }
-    else{
-      throw new NoSuchElementException
-    }
+    else throw new NoSuchElementException
   }
 
   def length(list: List[Int]): Int = {
@@ -54,20 +48,17 @@ object Lists {
   }
 
   def encode(list: List[Symbol]): List[(Int, Symbol)] = {
-    pack(list) map{ char =>
-      (char.length, char.head)
+    pack(list) map{ char => (char.length, char.head)
     }
   }
 
   def encodeModified(list: List[Symbol]): List[Any] = {
-    encode(list) map{ char =>
-      if (char._1 == 1) char._2 else char
+    encode(list) map{ char => if (char._1 == 1) char._2 else char
     }
   }
 
   def decode(list: List[(Int, Symbol)]): List[Symbol] = {
-    list flatMap(char => List.fill(char._1)(char._2)
-      )
+    list flatMap(char => List.fill(char._1)(char._2))
   }
 
   def duplicate(list: List[Symbol]): List[Symbol] = {
@@ -78,9 +69,7 @@ object Lists {
     if (value > 0){
       encode(list) flatMap(char => List.fill(char._1 * value)(char._2))
     }
-    else {
-      throw new ArithmeticException("Value needs to be high than 0")
-    }
+    else throw new ArithmeticException("Value needs to be high than 0")
   }
 
   def drop(list: List[Symbol], value: Int): List[Symbol] = {
