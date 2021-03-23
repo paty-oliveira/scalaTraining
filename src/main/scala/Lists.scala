@@ -87,4 +87,9 @@ object Lists {
     val (prefix, suffix) = list.splitAt(value-1)
     prefix ++ suffix.grouped(value).flatMap(_.drop(1))
   }
+
+  def split(list: List[Symbol], value: Int): (List[Symbol], List[Symbol]) = {
+    if (list.isEmpty) (List(), List())
+    else list.splitAt(value)
+  }
 }
