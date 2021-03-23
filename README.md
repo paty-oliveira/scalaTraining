@@ -20,3 +20,6 @@ The implementation of the problems follows the methodology of **Test-Driven Deve
 12. [Decode a run-length encoded list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
 13. [Duplicate the elements of a list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
 14. [Duplicate the elements of a list a given number of times](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
+15. [Drop every Nth element from a list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
+16. [Split a list into two parts](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
+17. [Extract a slice from a list](https://github.com/paty-oliveira/scalaTraining/blob/main/src/main/scala/Lists.scala)
