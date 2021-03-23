@@ -22,5 +22,11 @@ class dropListsTest extends AnyFunSuite {
         Symbol("g"), Symbol("h"), Symbol("i"), Symbol("j"), Symbol("k")), -1)
     }
   }
+
+  test("Should return IllegalArgumentException when the list is empty "){
+    assertThrows[IllegalArgumentException]{
+      Lists.drop(List(), 1)
+    }
+  }
 }
 

@@ -84,8 +84,11 @@ object Lists {
   }
 
   def drop(list: List[Symbol], value: Int): List[Symbol] = {
-    val (prefix, suffix) = list.splitAt(value-1)
-    prefix ++ suffix.grouped(value).flatMap(_.drop(1))
+    if (list.isEmpty) throw new IllegalArgumentException
+    else {
+      val (prefix, suffix) = list.splitAt(value - 1)
+      prefix ++ suffix.grouped(value).flatMap(_.drop(1))
+    }
   }
 
   def split(list: List[Symbol], value: Int): (List[Symbol], List[Symbol]) = {
