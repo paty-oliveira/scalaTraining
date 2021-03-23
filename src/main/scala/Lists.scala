@@ -84,4 +84,11 @@ object Lists {
     if (list.isEmpty) (List(), List())
     else list.splitAt(value)
   }
+
+  def slice(list: List[Symbol], firstIndex: Int, secondIndex: Int): List[Symbol] = {
+    if (list.nonEmpty && firstIndex >=0 && secondIndex > 0){
+      list.slice(firstIndex, secondIndex)
+    }
+    else throw new IllegalArgumentException
+  }
 }
