@@ -82,4 +82,9 @@ object Lists {
       throw new ArithmeticException("Value needs to be high than 0")
     }
   }
+
+  def drop(list: List[Symbol], value: Int): List[Symbol] = {
+    val (prefix, suffix) = list.splitAt(value-1)
+    prefix ++ suffix.grouped(value).flatMap(_.drop(1))
+  }
 }
