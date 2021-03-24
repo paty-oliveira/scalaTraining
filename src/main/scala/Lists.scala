@@ -91,4 +91,11 @@ object Lists {
     }
     else throw new IllegalArgumentException
   }
+
+  def rotate(list: List[Symbol], startIndex: Int): List[Symbol] = {
+    if (list.isEmpty) List()
+    val index  = if (startIndex < 0) list.size + startIndex else startIndex
+    val (start, end) = list.splitAt(index)
+    end ++ start
+  }
 }
