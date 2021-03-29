@@ -9,9 +9,9 @@ object Lists {
     list.dropRight(1).last
   }
 
-  def kthElement(list: List[Int], element: Int): Int = {
-    if (list.nonEmpty && element <= list.length && element >= 0) {
-      list(element)
+  def kthElement(list: List[Int], index: Int): Int = {
+    if (list.nonEmpty && index <= list.length && index >= 0) {
+      list(index)
     }
     else throw new NoSuchElementException
   }
@@ -65,24 +65,24 @@ object Lists {
     encode(list) flatMap(char => List.fill(char._1*2)(char._2))
   }
 
-  def duplicateN(list: List[Symbol], value: Int): List[Symbol] = {
-    if (value > 0){
-      encode(list) flatMap(char => List.fill(char._1 * value)(char._2))
+  def duplicateN(list: List[Symbol], number: Int): List[Symbol] = {
+    if (number > 0){
+      encode(list) flatMap(char => List.fill(char._1 * number)(char._2))
     }
     else throw new ArithmeticException("Value needs to be high than 0")
   }
 
-  def drop(list: List[Symbol], value: Int): List[Symbol] = {
+  def drop(list: List[Symbol], index: Int): List[Symbol] = {
     if (list.isEmpty) throw new IllegalArgumentException
     else {
-      val (prefix, suffix) = list.splitAt(value - 1)
-      prefix ++ suffix.grouped(value).flatMap(_.drop(1))
+      val (prefix, suffix) = list.splitAt(index - 1)
+      prefix ++ suffix.grouped(index).flatMap(_.drop(1))
     }
   }
 
-  def split(list: List[Symbol], value: Int): (List[Symbol], List[Symbol]) = {
+  def split(list: List[Symbol], length: Int): (List[Symbol], List[Symbol]) = {
     if (list.isEmpty) (List(), List())
-    else list.splitAt(value)
+    else list.splitAt(length)
   }
 
   def slice(list: List[Symbol], firstIndex: Int, secondIndex: Int): List[Symbol] = {
