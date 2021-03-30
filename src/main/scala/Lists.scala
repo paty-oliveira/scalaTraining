@@ -115,4 +115,8 @@ object Lists {
     }
     }
   }
+
+  def range(firstValue: Int, endValue: Int): List[Int] = {
+    List.range(firstValue, endValue + 1)
+  }
 }
