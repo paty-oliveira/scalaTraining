@@ -1,4 +1,4 @@
-import scala.::
+
 
 object Lists {
   def last(list: List[Int]): Int = {
@@ -105,7 +105,7 @@ object Lists {
     list.splitAt(index) match {
       case (Nil, _) if index < 0 => throw new NoSuchElementException
       case (start, index :: end) => (start ::: end, index)
-      case (start, Nil) => throw new NoSuchElementException
+      case (_, Nil) => throw new NoSuchElementException
   }
 
   def insertAt(list: List[Symbol], index: Int, element: Symbol): List[Symbol] = {
@@ -118,5 +118,9 @@ object Lists {
 
   def range(firstValue: Int, endValue: Int): List[Int] = {
     List.range(firstValue, endValue + 1)
+  }
+
+  def randomSelect(list: List[Symbol], numberElements: Int): List[Symbol] = {
+    util.Random.shuffle(list).take(numberElements)
   }
 }
