@@ -120,7 +120,11 @@ object Lists {
     List.range(firstValue, endValue + 1)
   }
 
-  def randomSelect(list: List[Symbol], numberElements: Int): List[Symbol] = {
+  def randomSelect(list: List[Int], numberElements: Int): List[Int] = {
     util.Random.shuffle(list).take(numberElements)
+  }
+
+  def lotto(firstValue: Int, endValue: Int): List[Int] = {
+    randomSelect(List.range(1, endValue +1), firstValue)
   }
 }
