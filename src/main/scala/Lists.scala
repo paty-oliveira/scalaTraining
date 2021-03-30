@@ -107,4 +107,12 @@ object Lists {
       case (start, index :: end) => (start ::: end, index)
       case (start, Nil) => throw new NoSuchElementException
   }
+
+  def insertAt(list: List[Symbol], index: Int, element: Symbol): List[Symbol] = {
+    if (index < 0) throw new Exception("The index should be a positive value")
+    else{list.splitAt(index) match {
+      case (start, end) => start ::: element :: end
+    }
+    }
+  }
 }
