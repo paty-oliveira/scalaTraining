@@ -1,3 +1,5 @@
+import scala.::
+
 object Lists {
   def last(list: List[Int]): Int = {
     if (list.isEmpty) throw new NoSuchElementException
@@ -97,5 +99,12 @@ object Lists {
     val index  = if (startIndex < 0) list.size + startIndex else startIndex
     val (start, end) = list.splitAt(index)
     end ++ start
+  }
+
+  def removeAt(list: List[Symbol], index: Int): (List[Symbol], Symbol) =
+    list.splitAt(index) match {
+      case (Nil, _) if index < 0 => throw new NoSuchElementException
+      case (start, index :: end) => (start ::: end, index)
+      case (start, Nil) => throw new NoSuchElementException
   }
 }
