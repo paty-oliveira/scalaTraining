@@ -125,7 +125,7 @@ object Lists {
   }
 
   def lotto(firstValue: Int, endValue: Int): List[Int] = {
-    randomSelect(List.range(1, endValue +1), firstValue)
+    randomSelect(List.range(1, endValue + 1), firstValue)
   }
 
   def randomPermute(list: List[Int]): List[Int] = {
