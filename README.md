@@ -31,3 +31,18 @@ The implementation of the problems follows the methodology of **Test-Driven Deve
 23. [Lotto: Draw N different random numbers from the set 1..M](src/main/scala/Lists.scala)
 24. [Generate a random permutation of the elements of a list](src/main/scala/Lists.scala)
 25. [Sorting a list of lists according to length of sublists](src/main/scala/Lists.scala)
+
+
+### Arithmetic
+
+1. [Determine whether a given integer number is prime](src/main/scala/Arithmetic.scala)
+2. [Determine the greatest common divisor of two positive integer numbers](src/main/scala/Arithmetic.scala)
+3. [Determine whether two positive integer numbers are coprime](src/main/scala/Arithmetic.scala)
+4. [Calculate Euler's totient function phi(m)](src/main/scala/Arithmetic.scala)
+5. [Determine the prime factors of a given positive integer](src/main/scala/Arithmetic.scala)
+6. [Determine the prime factors of a given positive integer (2)](src/main/scala/Arithmetic.scala)
+7. [Calculate Euler's totient function phi(m) (improved)](src/main/scala/Arithmetic.scala)
+8. [Compare the two methods of calculating Euler's totient function](src/main/scala/Arithmetic.scala)
+9. [A list of prime numbers](src/main/scala/Arithmetic.scala)
+10. [Goldbach's conjecture](src/main/scala/Arithmetic.scala)
+11. [A list of Goldbach compositions](src/main/scala/Arithmetic.scala)
