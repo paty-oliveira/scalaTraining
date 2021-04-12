@@ -131,4 +131,8 @@ object Lists {
   def randomPermute(list: List[Int]): List[Int] = {
     randomSelect(list, list.length)
   }
+
+  def sortLength(list: List[List[Symbol]]): List[List[Symbol]] = {
+    list.sortBy(_.size)
+  }
 }
