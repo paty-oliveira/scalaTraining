@@ -30,6 +30,4 @@ The implementation of the problems follows the methodology of **Test-Driven Deve
 22. [Extract a given number of randomly selected elements from a list](src/main/scala/Lists.scala)
 23. [Lotto: Draw N different random numbers from the set 1..M](src/main/scala/Lists.scala)
 24. [Generate a random permutation of the elements of a list](src/main/scala/Lists.scala)
-25. [Generate the combinations of K distinct objects chosen from the N elements of a list](src/main/scala/Lists.scala)
-26. [Group the elements of a set into disjoint subsets](src/main/scala/Lists.scala)
-27. [Sorting a list of lists according to length of sublists](src/main/scala/Lists.scala)
+25. [Sorting a list of lists according to length of sublists](src/main/scala/Lists.scala)
