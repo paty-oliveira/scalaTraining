@@ -18,6 +18,10 @@ object Arithmetic {
       greatestCommonDivisor(secondNumber, firstNumber % secondNumber)
     }
   }
+
+  def isCoprime(firstNumber: Int, secondNumber: Int): Boolean = {
+    greatestCommonDivisor(firstNumber, secondNumber) == 1
+  }
 }
 
 
