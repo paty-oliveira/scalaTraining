@@ -22,6 +22,17 @@ object Arithmetic {
   def isCoprime(firstNumber: Int, secondNumber: Int): Boolean = {
     greatestCommonDivisor(firstNumber, secondNumber) == 1
   }
+
+  def totient(number: Int): Int = {
+    var phiCoeficient = 1
+
+    for (i <- 2 to number) {
+      if (greatestCommonDivisor(i, number) == 1) {
+        phiCoeficient += 1
+      }
+    }
+    phiCoeficient
+  }
 }
 
 
