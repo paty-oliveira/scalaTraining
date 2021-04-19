@@ -51,6 +51,10 @@ object Arithmetic {
     val primeList = primeFactors(number)
     primeList.groupBy(prime => prime).map(value => (value._1, value._2.length))
   }
+
+  def listPrimes(lowerLimit: Int, upperLimit: Int): List[Int] = {
+    List.range(lowerLimit, upperLimit + 1).filter(number => isPrime(number))
+  }
 }
 
 
