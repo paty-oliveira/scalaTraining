@@ -1,5 +1,4 @@
 import scala.annotation.tailrec
-import scala.math.sqrt
 
 object Arithmetic {
 
@@ -46,6 +45,11 @@ object Arithmetic {
           case _ => foo(number, i + 1)
         }
     foo(number, 2)
+  }
+
+  def primeFactorsMultiplicity(number: Int): Map[Int, Int] = {
+    val primeList = primeFactors(number)
+    primeList.groupBy(prime => prime).map(value => (value._1, value._2.length))
   }
 }
 
