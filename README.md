@@ -43,4 +43,3 @@ The implementation of the problems follows the methodology of **Test-Driven Deve
 6. [Determine the prime factors of a given positive integer (2)](src/main/scala/Arithmetic.scala)
 7. [A list of prime numbers](src/main/scala/Arithmetic.scala)
 8. [Goldbach's conjecture](src/main/scala/Arithmetic.scala)
-9. [A list of Goldbach compositions](src/main/scala/Arithmetic.scala)
