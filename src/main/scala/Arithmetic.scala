@@ -55,6 +55,15 @@ object Arithmetic {
   def listPrimes(lowerLimit: Int, upperLimit: Int): List[Int] = {
     List.range(lowerLimit, upperLimit + 1).filter(number => isPrime(number))
   }
+
+  def goldbach(number: Int): (Int, Int) = {
+    if (number <= 0) throw new ArithmeticException("The number should be higher than zero.")
+
+    listPrimes(2, number).find(value => isPrime(number - value)) match {
+      case None => throw new IllegalArgumentException
+      case Some(value) => (value, number - value)
+    }
+  }
 }
 
 
